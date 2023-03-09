@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');   
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    max-width: 100%;
+    margin: 10px;
+    grid-gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+#map {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+/* ----------------- */ 
+
+/*
+    Nav styles 
+*/
+
+#logo {
+    width: 100px;
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+}
+
+#logo-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    position: absolute;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+}
+
+#nav-left, 
+#nav-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#nav-left a, 
+#nav-right a, 
+#nav-right button {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+#dropdown a {
+    padding: 5px 20px 5px 5px;
+    background-color: #ed5439;
+}
+
+#ig_logo,
+#fb_logo,
+#mail_icon {
+    height: 24px;
+    width: 24px;
+    margin: 0 10px;
+}
+
+#nav-right button {
+    background-color: #ed5439;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+/* ----------------- */ 
+.jumbotron {
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    color: white;
+    font-size: 28px;
+}
+
+#index {
+    background-image: url('/imgs/backgrounds/background.png');
+}
+
+#menu_jum {
+    background-image: url('imgs/backgrounds/Menu\ bg.jpg');
+}
+
+/* ----------------- */ 
+#section_2 {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 50px 0;
+}
+
+#section_2 img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_cont {
+    width: 50%;
+}
+
+.menu_cont p {
+    text-align: left;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+#menu_section_2 {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* ----------------- */ 
+
+/*
+    IMG slider 
+*/
+@keyframes animate {
+    10% {background-image: url('imgs/slider/slider-2.jpeg');}
+    20% {background-image: url('imgs/slider/slider-3.jpeg');}
+    30% {background-image: url('imgs/slider/slider-4.jpeg');}
+    40% {background-image: url('imgs/slider/slider-5.jpeg');}
+    50% {background-image: url('imgs/slider/slider-6.jpeg');}
+    60% {background-image: url('imgs/slider/slider-7.jpeg');}
+    70% {background-image: url('imgs/slider/slider-8.jpeg');}
+    80% {background-image: url('imgs/slider/slider-9.jpeg');}
+    90% {background-image: url('imgs/slider/slider-10.jpeg');}
+    100% {background-image: url('imgs/slider/slider-1.jpeg');}
+}
+
+#img-slider {
+    background-image: url('imgs/slider/slider-1.jpeg');
+    height: 667px;
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* ----------------- */ 
+
+#email_sign-up {
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+#email_sign-up button {
+    padding: 10px;
+    background: #ed5439;
+    color: white;
+    border: none;
+    font-size: 22px;
+}
+
+#email_sign-up form input {
+    font-size: 22px;
+    padding: 10px;
+}
+
+/* -------------- */
+#gift-text {
+    width: 70%;
+    padding-left: 100px;
+    font-size: 22px;
+}
+
+#gift-text button {
+    background: #ed5439;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+}
+
+/* ----------------- */ 
+
+#footer_icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer_icon {
+    height: 18px;
+    width: 18x;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+footer {
+    background-color: #ed5439;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#footer_credits p {
+    margin: 5px;
+}
